@@ -33,6 +33,8 @@ def main():
             total_bomb_time = time.time() - bomb_time
             print 'bomb planted for {} seconds'.format(total_bomb_time)
             if total_bomb_time >= 30:
+                # Maybe over here you can have the program play the iconic sound file  that goes "10... 9... 8... 7..." and so on.
+                # I am still learning Python and might be actively trying to figure out how to do this by myself as you are reading this.
                 if last_blink_time is None:
                     last_blink_time = time.time() - 2
                 elapsed_blink_time = time.time() - last_blink_time
